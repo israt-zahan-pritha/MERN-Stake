@@ -197,7 +197,15 @@ h1 {
   display: grid;
   max-width: 290px;
   height: auto;
-  /* text-align: center; */
+}
+
+.four-img img {
+  display: grid;
+  max-width: 290px;
+  height: auto;
+}
+.one-img img {
+  text-align: center;
 }
 
 .test-img {
@@ -224,6 +232,21 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.pic {
+  text-align: center;
+}
+.pic img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  border: 2px solid var(--button-color);
+}
+.pic h3 {
+  padding-bottom: 15px;
+}
+.israt {
+  color: var(--button-color);
 }
 /* Bottom Section */
 .footer-columns {
@@ -290,11 +313,11 @@ footer {
   .skills h2,
   .portfolio h2,
   .footer-top h2 {
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 30px;
+    line-height: 38px;
   }
-  .four-img {
-    grid-template-columns: repeat(3, 1fr);
+  .one-img {
+    display: flex;
     text-align: center;
   }
 }
@@ -307,9 +330,6 @@ footer {
   .skill-experience {
     margin: 30px 0;
   }
-  .four-img {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 @media screen and (max-width: 576px) {
   .head {
@@ -319,10 +339,8 @@ footer {
   nav a {
     font-size: 15px;
   }
-  .four-img {
-    grid-template-columns: 1fr;
-    text-align: center;
-    max-width: 290px;
+  .pic {
+    text-align: left;
   }
 }
 @media screen and (min-width: 992px) {
