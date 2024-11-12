@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baraz Header with Responsive Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Input CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header with Navbar -->
+    <nav class="navbar navbar-light navbar-custom shadow-sm">
+      <div class="container px-4">
+        <!-- First Row: Hamburger Menu and Links -->
+        <div class="row w-100 align-items-center">
+          <div
+            class="col-md-12 d-flex justify-content-between align-items-center"
+          >
+            <!-- Hamburger Button for Small Screens -->
+            <button
+              class="navbar-toggler d-md-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div
+              class="collapse navbar-collapse justify-content-center d-md-flex"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav flex-column flex-md-row">
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">Save More on App</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">Sell on Baraz</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">Customer Care</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">Track My Order</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">Signup / Login</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">Baraz Affiliate Program</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Row: Logo and Search Bar -->
+        <div
+          class="d-flex justify-content-center w-100 mt-2 align-items-center"
+        >
+          <div class="col-3 d-flex justify-content-center">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+              <img src="img/logo.png" alt="Baraz Logo" class="logo" />
+            </a>
+          </div>
+          <div class="col-9">
+            <!-- Search Bar -->
+            <form class="d-flex">
+              <input
+                class="form-control search-input"
+                type="search"
+                placeholder="Search in Baraz"
+                aria-label="Search"
+              />
+              <button class="btn search-button" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+        <!-- ------------ -->
+      </div>
+    </nav>
+    <!-- Slider Section Start -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/slider1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider3.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider4.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider5.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+    </div>
+    <!-- About Section Start -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Left Column (Image) -->
+          <div class="col-md-6">
+            <img src="img/about.jpg" alt="About Us" class="img-fluid rounded" />
+          </div>
+          <!-- Right Column (Text) -->
+          <div class="col-md-6">
+            <div class="container text-left">
+              <button class="load-more-btn">About Us</button>
+            </div>
+            <h2 class="my-3">
+              We are committed to providing our customers with exceptional.
+            </h2>
+            <p class="fs-5 text-justify">
+              We are a passionate team dedicated to providing the best solutions
+              for your needs. Our commitment to quality and innovation drives
+              everything we do. With years of experience, we take pride in
+              delivering outstanding results. Lorem Ipsum is simply dummy text
+              of free available in market the way printing and typesetting
+              industry has been the industry's standard dummy text ever. Price
+              of additional materials or parts (if needed) Transportation cost
+              for carrying new materials/parts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 1 section Img  Start-->
+    <div class="container d-flex justify-content-center align-items-center">
+      <img src="img/top.png" alt="top-img" class="img mx-auto" />
+    </div>
+    <!-- Grid Item Start -->
+    <div class="container my-5">
+      <div class="row text-center">
+        <!-- Grid Item 1 -->
+        <div class="col-6 col-md-3 mb-3">
+          <div class="icon-box">
+            <div class="icon-circle">
+              <img src="img/feature1.png" alt="Free Shipping Icon" />
+            </div>
+            <span class="icon-label">Free Shipping</span>
+          </div>
+        </div>
+        <!-- Grid Item 2 -->
+        <div class="col-6 col-md-3 mb-3">
+          <div class="icon-box">
+            <div class="icon-circle">
+              <img src="img/feature2.png" alt="Grocery Shopping Icon" />
+            </div>
+            <span class="icon-label">Grocery Shopping</span>
+          </div>
+        </div>
+        <!-- Grid Item 3 -->
+        <div class="col-6 col-md-3 mb-3">
+          <div class="icon-box">
+            <div class="icon-circle">
+              <img src="img/feature3.png" alt="BarazMall Icon" />
+            </div>
+            <span class="icon-label">BarazMall</span>
+          </div>
+        </div>
+        <!-- Grid Item 4 -->
+        <div class="col-6 col-md-3 mb-3">
+          <div class="icon-box">
+            <div class="icon-circle">
+              <img src="img/feature4.png" alt="Digital Sheba Icon" />
+            </div>
+            <span class="icon-label">Digital Sheba</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 6 Image Start -->
+    <div id="about" class="container">
+      <div class="row">
+        <!-- Product Item -->
+        <div class="col-lg-2 col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/d1.jpg" alt="Product 1" class="product-img" />
+            <h6>Buds Air wireless Bluetooth Headsets</h6>
+            <p class="product-price">
+              ৳400 <span class="product-discount">৳600</span> -33%
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/d6.jpg" alt="Product 2" class="product-img" />
+            <h6>Vivo/Oppo/MI in Ear Earphone</h6>
+            <p class="product-price">
+              ৳135 <span class="product-discount">৳200</span> -33%
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/d3.jpg" alt="Product 3" class="product-img" />
+            <h6>TWS i7s Double Dual Mini Earphone</h6>
+            <p class="product-price">
+              ৳248 <span class="product-discount">৳700</span> -65%
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/d4.jpg" alt="Product 4" class="product-img" />
+            <h6>Electric Hot Water Bag</h6>
+            <p class="product-price">
+              ৳163 <span class="product-discount">৳550</span> -70%
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/d5.jpg" alt="Product 4" class="product-img" />
+            <h6>Electric Hot Water Bag</h6>
+            <p class="product-price">
+              ৳163 <span class="product-discount">৳550</span> -70%
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/d6.jpg" alt="Product 4" class="product-img" />
+            <h6>Electric Hot Water Bag</h6>
+            <p class="product-price">
+              ৳163 <span class="product-discount">৳550</span> -70%
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BarazMall Section -->
+      <h3 class="mt-5 mb-3">BarazMall</h3>
+      <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/f1.jpg" alt="Product 1" class="product-img" />
+            <h6>Buds Air wireless Bluetooth Headsets</h6>
+            <p class="product-price">
+              ৳400 <span class="product-discount">৳600</span> -33%
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/f2.jpg" alt="Product 1" class="product-img" />
+            <h6>Buds Air wireless Bluetooth Headsets</h6>
+            <p class="product-price">
+              ৳400 <span class="product-discount">৳600</span> -33%
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/f3.jpg" alt="Product 1" class="product-img" />
+            <h6>Buds Air wireless Bluetooth Headsets</h6>
+            <p class="product-price">
+              ৳400 <span class="product-discount">৳600</span> -33%
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/f4.jpg" alt="Product 1" class="product-img" />
+            <h6>Buds Air wireless Bluetooth Headsets</h6>
+            <p class="product-price">
+              ৳400 <span class="product-discount">৳600</span> -33%
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/f5.jpg" alt="Product 1" class="product-img" />
+            <h6>Buds Air wireless Bluetooth Headsets</h6>
+            <p class="product-price">
+              ৳400 <span class="product-discount">৳600</span> -33%
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6">
+          <div class="product-card">
+            <img src="img/f6.jpg" alt="Product 1" class="product-img" />
+            <h6>Buds Air wireless Bluetooth Headsets</h6>
+            <p class="product-price">
+              ৳400 <span class="product-discount">৳600</span> -33%
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Button -->
+    <div class="container text-center my-5">
+      <button class="load-more-btn">LOAD MORE</button>
+    </div>
+    <!-- ------------Footer---------------- -->
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Logo and Description -->
+          <div class="col-md-4">
+            <img src="img/logo.png" alt="logo" class="logo" />
+            <div class="input-group">
+              <input
+                type="email"
+                class="custom-input"
+                placeholder="Enter your email"
+              />
+            </div>
+            <!-- Button -->
+            <div class="text-left">
+              <button class="load-more-btn my-3">Submit Now</button>
+            </div>
+          </div>
+          <!-- Company -->
+          <div class="col-md-4">
+            <h5>Company</h5>
+            <ul class="list-unstyled">
+              <li>Save More on App</li>
+              <li>Sell on Baraz</li>
+              <li>Customer Care</li>
+              <li>Track My Order</li>
+              <li>Baraz Affiliate Program</li>
+            </ul>
+          </div>
+          <!-- Contact Us -->
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <p>
+              Sha Alom Bhabon, 4th Floor,<br />
+              Madani Nagar, Siddhirgonj,<br />
+              Narayanganj, 1430
+            </p>
+            <p>+88 01783-533 533</p>
+            <p>info@pritha.org</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
